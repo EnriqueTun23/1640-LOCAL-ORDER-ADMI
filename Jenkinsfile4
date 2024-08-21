@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         scannerHome = tool name: 'sonar-scanner'
-        SONAR_TOKEN = credentials('SONAR_CLOUD_TOKEN')
+        SONAR_TOKEN = credentials('jenkins-sonar')
         //SNYK_TOKEN = credentials('SNYK_TOKEN')
         AUTHOR_NAME = ''
         AUTHOR_EMAIL = ''
